@@ -8,7 +8,6 @@ public class PostmanEchoTest {
     public void shouldPostRawTextTest() {
         given()
                 .baseUri("https://postman-echo.com")
-                .contentType("text/plain; charset=UTF-8")
                 .body("hello body")
                 .when()
                 .post("/post")
